@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Awesome search Box</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet"/>
+    <script src = "jquery-3.4.1.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            var temp;
+            $("#search-btn").click(function () {
+                var bookid = $("input[id = 'search-txt']").val();
+                $("input[id = 'search-txt']").val("");
+                console.log("12333");
+                $(location).attr("href", "HistoryWindow.html?value="+bookid);
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+<div class="search-box" id = "search-box">
+    <input class="search-txt" type="text" id = "search-txt" placeholder="Type to search" />
+    <a class="search-btn" href="#" id = "search-btn">
+        <i class="fas fa-search" id = "search-icon"></i>
+    </a>
+</div>
+<h1 class = "bigtitle">
+    <span id="l">图</span>书共<span id ='x'>享</span>
+</h1>
+<div class = "pos">
+
+        <a class="title-btn" id = "title-btn">
+            <i class="fas fa-binoculars icon"></i>
+            <span class = "title1">    Track</span>
+        <span class = "title2">   and </span>
+        <span class = "title3">Review</span>
+        </a>
+</div>
+</body>
+</html>

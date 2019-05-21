@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #8c7ae6;
+}
+.search-box {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.search-btn {
+    color: #8c7ae6;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    text-decoration: none;
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+    background: white;
+}
+
+atCorner {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.pos {
+    position: absolute;
+    left:50%;
+    top:30%;
+    transform: translate(-50%, -50%);
+}
+
+.title-btn {
+    font-size: 70px;
+    color: #2f3640;
+}
+
+.title-btn {
+    text-decoration: none;
+    position: relative;
+    color: #313131;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    overflow: hidden;
+    transition: 0.7s all;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+.title-btn:before {
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 8px solid #313131;
+    bottom: 0;
+    right: 500px;
+    transition: 0.7s all;
+}
+.title-btn:hover:before {
+    right: 0;
+    opacity: 0;
+}
+
+.title-btn:hover>.icon {
+    opacity: 0;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+
+.icon {
+    transition: 1s;
+}
+
+.bigtitle {
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+    font-family: 迷你简硬笔行书;
+    color: #2f3640;
+    font-size: 60px;
+}
+
+#l {
+    font-family: 迷你简硬笔行书;
+    color: #2f3640;
+    font-size: 80px;
+}
+
+#x {
+    transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+}
+
+.title5 {
+    transition: 1s;
+
+}
+
+.title1:hover {
+    transition: 1s;
+    opacity: 0.7;
+}
+
+.title2:hover {
+    transition: 1s;
+    opacity: 0.7;
+}
+
+.title3.hover {
+    transition: 1s;
+    opacity: 0.7;
+}
